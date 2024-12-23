@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Pokernow Bot",
+  "description": "Base Level Extension",
+  "version": "0.4.4",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.pokernow.club/*"],
+    "js": ["main.js"]
+  }],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.pokernow.club/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
