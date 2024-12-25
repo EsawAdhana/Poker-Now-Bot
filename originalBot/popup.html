@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokerNow Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #start-bot {
+            background-color: #45a049;
+            color: white;
+        }
+        #kill-bot {
+            background-color: #d32f2f;
+            color: white;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        #bot-status {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #bdbdbd;
+        }
+    </style>
+<script defer src="popup.js"></script></head>
+<body>
+    <h1>PokerNow Bot</h1>
+    <div class="button-container">
+        <button id="start-bot">Start Bot</button>
+        <button id="kill-bot">Kill Bot</button>
+    </div>
+    <div id="bot-status">Bot Status: Off</div>
+    <script src="popup.js"></script>
+</body>
+</html>
